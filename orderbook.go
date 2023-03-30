@@ -1,9 +1,9 @@
 package simuexos
 
 type priorityQueue interface {
-	peek() Order
-	push(Order)
-	pop() Order
+	Peek() (Order, bool)
+	Push(Order)
+	Pop() (Order, bool)
 }
 
 type OrderBook struct {
